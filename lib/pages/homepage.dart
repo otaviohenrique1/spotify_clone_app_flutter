@@ -34,119 +34,137 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 20,
-                    child: Container(
-                      margin: const EdgeInsets.only(left: 12),
-                      width: double.infinity,
-                      child: Column(
-                        children: [
-                          Expanded(
-                            flex: 25,
-                            child: Container(
-                              height: double.infinity,
-                              color: Colors.blueGrey,
-                            ),
-                          ),
-                          const SizedBox(height: 12),
-                          Expanded(
-                            flex: 75,
-                            child: Container(
-                              height: double.infinity,
-                              color: Colors.cyan,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 80,
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 16),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            decoration: BoxDecoration(
-                              color: Colors.green[900],
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(20),
-                                topRight: Radius.circular(20),
+              child: Container(
+                margin: const EdgeInsets.only(top: 8),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 20,
+                      child: Container(
+                        margin: const EdgeInsets.only(left: 12),
+                        width: double.infinity,
+                        child: Column(
+                          children: [
+                            Expanded(
+                              flex: 25,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                height: double.infinity,
                               ),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 16),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    BotaoIconeRedondo(
-                                      backgroundColor: Colors.black54,
-                                      iconColor: Colors.white,
-                                      onPressed: () {},
-                                      icon: Icons.arrow_back,
-                                    ),
-                                    const SizedBox(width: 8),
-                                    BotaoIconeRedondo(
-                                      backgroundColor: Colors.black54,
-                                      iconColor: Colors.white,
-                                      onPressed: () {},
-                                      icon: Icons.arrow_forward,
-                                    ),
-                                    const SizedBox(width: 16),
-                                    BotaoIconeRedondo(
-                                      backgroundColor: Colors.green,
-                                      iconColor: Colors.white,
-                                      onPressed: () {},
-                                      icon: Icons.pause,
-                                    ),
-                                    const SizedBox(width: 16),
-                                    const Text(
-                                      "Seus episodios",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 24,
-                                      ),
-                                    ),
-                                  ],
+                            const SizedBox(height: 12),
+                            Expanded(
+                              flex: 75,
+                              child: Container(
+                                height: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.cyan,
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    BotaoIconeRedondo(
-                                      backgroundColor: Colors.black54,
-                                      iconColor: Colors.white,
-                                      onPressed: () {},
-                                      icon: Icons.supervisor_account_sharp,
-                                    ),
-                                    const SizedBox(width: 16),
-                                    BotaoIconeRedondo(
-                                      backgroundColor: Colors.black54,
-                                      iconColor: Colors.white,
-                                      onPressed: () {},
-                                      icon: Icons.account_circle,
-                                    ),
-                                  ],
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              color: Colors.blue,
-                            ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                    Expanded(
+                      flex: 80,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 90,
+                              decoration: BoxDecoration(
+                                color: Colors.green[900],
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(12),
+                                  topRight: Radius.circular(12),
+                                ),
+                              ),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      BotaoIconeRedondo(
+                                        backgroundColor: Colors.black54,
+                                        iconColor: Colors.white,
+                                        onPressed: () {},
+                                        icon: Icons.arrow_back,
+                                      ),
+                                      const SizedBox(width: 8),
+                                      BotaoIconeRedondo(
+                                        backgroundColor: Colors.black54,
+                                        iconColor: Colors.white,
+                                        onPressed: () {},
+                                        icon: Icons.arrow_forward,
+                                      ),
+                                      const SizedBox(width: 16),
+                                      BotaoIconeRedondo(
+                                        backgroundColor: Colors.green,
+                                        iconColor: Colors.white,
+                                        onPressed: () {},
+                                        icon: Icons.pause,
+                                      ),
+                                      const SizedBox(width: 16),
+                                      const Text(
+                                        "Seus episodios",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 24,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      BotaoIconeRedondo(
+                                        backgroundColor: Colors.black54,
+                                        iconColor: Colors.white,
+                                        onPressed: () {},
+                                        icon: Icons.supervisor_account_sharp,
+                                      ),
+                                      const SizedBox(width: 16),
+                                      BotaoIconeRedondo(
+                                        backgroundColor: Colors.black54,
+                                        iconColor: Colors.white,
+                                        onPressed: () {},
+                                        icon: Icons.account_circle,
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: const BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.only(
+                                    bottomLeft: Radius.circular(12),
+                                    bottomRight: Radius.circular(12),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
+            const SizedBox(height: 16),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               height: 90,
@@ -200,6 +218,12 @@ class _HomePageState extends State<HomePage> {
                             backgroundColor: Colors.black54,
                             iconColor: Colors.white,
                             onPressed: () {},
+                            icon: Icons.one_x_mobiledata,
+                          ),
+                          BotaoIconeRedondo(
+                            backgroundColor: Colors.black54,
+                            iconColor: Colors.white,
+                            onPressed: () {},
                             icon: Icons.replay_10,
                           ),
                           BotaoIconeRedondo(
@@ -226,6 +250,7 @@ class _HomePageState extends State<HomePage> {
                             onPressed: () {},
                             icon: Icons.forward_10,
                           ),
+                          const SizedBox(width: 32),
                         ],
                       ),
                       const SizedBox(
@@ -285,6 +310,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            SizedBox(height: 8),
           ],
         ),
       ),
