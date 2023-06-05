@@ -39,20 +39,45 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   children: [
                     Expanded(
-                      flex: 20,
+                      flex: 25,
                       child: Container(
                         margin: const EdgeInsets.only(left: 12),
                         width: double.infinity,
                         child: Column(
                           children: [
-                            Expanded(
-                              flex: 25,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blueGrey,
-                                  borderRadius: BorderRadius.circular(12),
+                            Container(
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    ElevatedButton.icon(
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.blueGrey,
+                                      ),
+                                      onPressed: () {},
+                                      icon: const Icon(
+                                        Icons.home,
+                                        color: Colors.black,
+                                      ),
+                                      label: const Text(
+                                        "Inicio",
+                                        style: TextStyle(color: Colors.black),
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    ElevatedButton.icon(
+                                      onPressed: () {},
+                                      icon: const Icon(Icons.search),
+                                      label: const Text("Buscar"),
+                                    ),
+                                  ],
                                 ),
-                                height: double.infinity,
                               ),
                             ),
                             const SizedBox(height: 12),
@@ -60,8 +85,9 @@ class _HomePageState extends State<HomePage> {
                               flex: 75,
                               child: Container(
                                 height: double.infinity,
+                                width: double.infinity,
                                 decoration: BoxDecoration(
-                                  color: Colors.cyan,
+                                  color: Colors.blueGrey,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                               ),
@@ -148,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                             Expanded(
                               child: Container(
                                 decoration: const BoxDecoration(
-                                  color: Colors.blue,
+                                  color: Colors.blueGrey,
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(12),
                                     bottomRight: Radius.circular(12),
@@ -310,7 +336,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
           ],
         ),
       ),
